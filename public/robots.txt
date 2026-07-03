@@ -1,6 +1,7 @@
-# TODO before launch: confirm the Sitemap URL below matches the real production domain
-# (must match business.siteUrl in src/config/business.ts)
+# Currently points at the live Vercel deployment.
+# If a custom domain is attached later, update this to match business.siteUrl
+# in src/config/business.ts (and index.html, sitemap.xml the same way).
 User-agent: *
 Allow: /
 
-Sitemap: https://www.beautybarstudio.com/sitemap.xml
+Sitemap: https://beauty-bar-studio.vercel.app/sitemap.xml

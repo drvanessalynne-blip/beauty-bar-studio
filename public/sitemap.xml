@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Placeholder sitemap for a one-page site.
-  TODO before launch:
-    - Replace https://www.beautybarstudio.com/ with the real production domain
-      (must match business.siteUrl in src/config/business.ts).
+  Currently points at the live Vercel deployment.
+  TODO:
+    - If a custom domain is attached later, replace https://beauty-bar-studio.vercel.app/
+      with it (and update business.siteUrl, index.html, robots.txt the same way).
     - Update <lastmod> whenever homepage content changes.
     - Add additional <url> entries here if standalone pages/routes are added later.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.beautybarstudio.com/</loc>
+    <loc>https://beauty-bar-studio.vercel.app/</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

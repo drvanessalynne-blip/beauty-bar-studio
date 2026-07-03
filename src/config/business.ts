@@ -3,15 +3,17 @@
  * Every component pulls from here — update values in this file only.
  *
  * BEFORE LAUNCH, replace the placeholders marked "TODO" below:
- *   - siteUrl     → the live production domain (used for canonical URL, Open Graph, and schema.org)
+ *   - siteUrl     → if a custom domain is attached later, update this (and index.html,
+ *                   robots.txt, sitemap.xml, which are static and duplicate this value)
  *   - bookingUrl  → the real Square Appointments booking link
  *   - social      → real Instagram/Facebook profile URLs
  */
 export const business = {
   name: "Beauty Bar Studio",
 
-  // TODO: replace with the live production domain before launch (no trailing slash)
-  siteUrl: "https://www.beautybarstudio.com",
+  // Currently the live Vercel deployment. Update here (and in index.html, robots.txt,
+  // sitemap.xml) if a custom domain is attached later. No trailing slash.
+  siteUrl: "https://beauty-bar-studio.vercel.app",
 
   address: {
     line1: "1200 Mountain Glow", // TODO: confirm/update street address

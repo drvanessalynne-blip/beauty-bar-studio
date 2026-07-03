@@ -1,0 +1,6 @@
+# TODO before launch: confirm the Sitemap URL below matches the real production domain
+# (must match business.siteUrl in src/config/business.ts)
+User-agent: *
+Allow: /
+
+Sitemap: https://www.beautybarstudio.com/sitemap.xml

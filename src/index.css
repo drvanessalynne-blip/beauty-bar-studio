@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — do not change these 5 values without client approval */
+  --color-rose-gold: #b76e79;
+  --color-champagne: #f7e7ce;
+  --color-charcoal: #232323;
+  --color-ivory: #fff8f2;
+  --color-white: #ffffff;
+
+  /*
+   * Rose Gold text-only variants for WCAG 2.2 AA contrast (4.5:1).
+   * Brand Rose Gold (#B76E79) as running TEXT fails AA against every
+   * light surface (white 3.80:1, ivory 3.62:1, champagne 3.13:1) and
+   * against charcoal (4.13:1). These same-hue, darker/lighter variants
+   * are used ONLY for small text color — buttons, badges, icons, and
+   * borders keep the true --color-rose-gold unchanged, since graphical
+   * elements only need to clear the lower 3:1 non-text threshold.
+   */
+  --color-rose-gold-ink: #925861; /* text on light backgrounds — passes 4.5:1+ on white/ivory/champagne */
+  --color-rose-gold-light: #c07f89; /* text on dark backgrounds (e.g. charcoal footer) — passes 4.97:1 */
+
+  /*
+   * Rose Gold Deep — a ~12% darker, same-hue shade of Rose Gold used ONLY
+   * as the solid fill behind WHITE text (primary buttons, filled badges).
+   * True Rose Gold behind white text measures 3.80:1, short of the 4.5:1
+   * AA text requirement. This deepened fill measures 4.74:1 and is subtle
+   * enough to read as the same brand color at a glance.
+   */
+  --color-rose-gold-deep: #a1616a; /* white text on this fill passes 4.74:1 */
+
+  --font-sans: "Inter", "Manrope", system-ui, sans-serif;
+  --font-heading: "Playfair Display", "Cormorant Garamond", serif;
+
+  /* Soft luxury shadow scale */
+  --shadow-soft-sm: 0 4px 12px -4px rgba(35, 35, 35, 0.12);
+  --shadow-soft-md: 0 10px 30px -12px rgba(35, 35, 35, 0.15);
+  --shadow-soft-lg: 0 20px 40px -15px rgba(35, 35, 35, 0.2);
+}
+
+@layer base {
+  * {
+    @apply border-charcoal/10;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-charcoal font-sans antialiased;
+  }
+}
